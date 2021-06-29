@@ -11,6 +11,7 @@ import youtube from './api/youtube'
 import './components/css/welcome.css'
 
 class App extends React.Component{
+    
 state={
     video:[],
     selectedVideo:null,
@@ -28,9 +29,16 @@ state={
             q: searchTerm,
         }
         })
-        // console.log(response)
+
+        
+        
+        console.log(response)
         this.setState({video: response.data.items, selectedVideo:response.data.items[0]})
     }
+
+
+
+
     render()
     {
         return(
@@ -49,10 +57,11 @@ state={
                             <VideoDetail video={this.state.selectedVideo}/>
                         </Grid>
 
-                        <Grid item xs={12} md={5} lg={4} >
+                       <Grid item xs={12} md={5} lg={4} >
                             {/* Video List */}
                             <VideoList video={this.state.video} onVideoSelect={this.onVideoSelect}/>
                         </Grid>
+                        
                     </Grid>
                 </Grid> 
                 <div className="ocean">

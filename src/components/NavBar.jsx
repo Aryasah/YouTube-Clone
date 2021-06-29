@@ -143,7 +143,7 @@ const NavBar = ({onFormSubmit}) => {
       </AppBar>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="warning">
-          This is a success message!
+          Search Query is Empty,make sure to type something
         </Alert>
       </Snackbar>    
     </div>

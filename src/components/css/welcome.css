@@ -52,3 +52,16 @@ body {
     transform: translate3d(0,5px,0);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .welcome-img{
+    height:30%;
+  }
+  .ocean{
+    display: none;
+  }
+  body {
+    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+    overflow-x: hidden;
+  }
+}
