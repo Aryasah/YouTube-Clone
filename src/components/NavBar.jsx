@@ -120,7 +120,7 @@ const NavBar = ({onFormSubmit}) => {
             
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Youtube-Clone
+            Youtube-Play
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
